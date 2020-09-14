@@ -6,7 +6,8 @@
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --config ./config/webpack.config.development.js",
     "build": "rimraf dist && NODE_ENV=production webpack --config ./config/webpack.config.production.js",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "aws s3 cp dist/ s3://mattlucascodes.com --recursive"
   },
   "author": "Steve Kinney <hello@stevekinney.net> (http://stevekinney.net)",
   "license": "MIT",
@@ -67,9 +68,9 @@
     "rimraf": "^2.6.2",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
-    "webpack": "^4.1.1",
+    "webpack": "^4.20.2",
     "webpack-bundle-analyzer": "^2.11.1",
-    "webpack-cli": "^2.0.11",
+    "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.1.1"
   }
 }

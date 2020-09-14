@@ -7,10 +7,11 @@
 body {
   margin: 0;
   font: menu;
+  background-color: tomato;
 }
 
 a {
-  color: black;
+  color: teal;
   text-decoration: none;
   border-bottom: 5px solid pink;
 }
